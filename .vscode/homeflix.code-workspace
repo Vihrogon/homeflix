@@ -1,0 +1,42 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "deno.enable": true,
+        "deno.lint": true,
+        "deno.unstable": false,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "denoland.vscode-deno",
+        "[css]": {
+            "editor.defaultFormatter": "vscode.css-language-features"
+        }
+    },
+    "extensions": {
+        "recommendations": ["denoland.vscode-deno"]
+    },
+    "launch": {
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "request": "launch",
+                "name": "Launch Program",
+                "type": "node",
+                "program": "${workspaceFolder}/main.js",
+                "cwd": "${workspaceFolder}",
+                "runtimeExecutable": "C:\\Users\\admin\\.deno\\bin\\deno.EXE",
+                "runtimeArgs": [
+                    "run",
+                    "--inspect-wait",
+                    "--allow-all"
+                ],
+                "attachSimplePort": 9229
+            }
+        ]
+    }
+}
